@@ -69,7 +69,7 @@ prompt::prompt() {
 
   // READ IN: >You Are prompt begins here.
 
-    QFile you_are(".\\youare.txt");
+    QFile you_are("youare.txt");
     QTextStream arein(&you_are);
 
     if (!you_are.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -83,7 +83,7 @@ prompt::prompt() {
 
   // READ IN: >You Must prompt begins here.
 
-    QFile you_must(".\\youmust.txt");
+    QFile you_must("youmust.txt");
     QTextStream mustin(&you_must);
 
     if (!you_must.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -97,7 +97,7 @@ prompt::prompt() {
 
   // READ IN: >By Doing prompt begins here.
 
-    QFile by_doing(".\\bydoing.txt");
+    QFile by_doing("bydoing.txt");
     QTextStream doin(&by_doing);
 
     if (!by_doing.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -111,7 +111,7 @@ prompt::prompt() {
 
   // READ IN: >So That prompt begins here.
 
-    QFile so_that(".\\sothat.txt");
+    QFile so_that("sothat.txt");
     QTextStream soin(&so_that);
 
     if (!so_that.open(QIODevice::ReadOnly | QIODevice::Text))
